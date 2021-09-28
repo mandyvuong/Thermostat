@@ -33,4 +33,8 @@ class Thermostat {
   switchPowerSavingModeOff() {
     this.PowerSavingMode = false;
   }
+
+  switchPowerSavingModeOn() {
+    this.powerSavingMode = true;
+  }
 }
