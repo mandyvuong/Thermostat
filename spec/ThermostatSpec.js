@@ -9,8 +9,12 @@ describe('Thermostat', function() {
   })
 
   describe('thermostat temperature', function(){
-    it ('at 20 C', function(){
+    it ('starts at 20 C', function(){
       expect(thermostat.temp).toEqual(20);
+    });
+
+    it('starts at 20 C', function() {
+      expect(thermostat.getCurrentTemp()).toEqual(20);
     });
   });
 });
