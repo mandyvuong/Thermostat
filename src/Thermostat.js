@@ -3,6 +3,7 @@
 class Thermostat {
   constructor() {
     this.temp = 20;
+    this.DEFAULT_TEMP = 20;
     this.MIN_TEMP = 10;
     this.MAX_LIMIT_PSM_ON = 25;
     this.MAX_LIMIT_PSM_OFF = 32;
@@ -48,5 +49,9 @@ class Thermostat {
 
   switchPowerSavingModeOn() {
     this.powerSavingMode = true;
+  }
+
+  resetTemp() {
+    this.temp = this.DEFAULT_TEMP;
   }
 }
