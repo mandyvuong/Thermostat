@@ -67,3 +67,7 @@ class Thermostat {
     return 'high-usage';
   }
 }
+
+document.body.addEventListener('click', function(event) {
+  console.log("Body clicked!");
+});
