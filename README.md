@@ -17,3 +17,14 @@ Specification:
 - You can reset the temperature to 20 with a reset function
 - You can ask about the thermostat's current energy usage: < 18 is `low-usage`, <= 25 is `medium-usage`, anything else is `high-usage`.
 - (In the challenges where we add an interface, low-usage will be indicated with green, medium-usage indicated with black, high-usage indicated with red.)
+
+
+# Thermostat Interface 
+
+  buttons/functions on the HTML page 
+  
+- up()
+- down()
+- switchPowerSavingModeOff()
+- switchPowerSavingModeOn()
+- resetTemp()
