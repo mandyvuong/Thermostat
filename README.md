@@ -1,6 +1,7 @@
 # Thermostat: business logic
 
-Week 6 Makers Academy challenge is building the logic needed to model a simple thermostat. Objective is to use Jasmine to Test-Drive Development of a thermostat.
+Week 6 Makers Academy week challenge
+Building the logic needed to model a simple thermostat. Objective is to use Jasmine to Test-Drive Development of a thermostat and learning fundamentals of Javascript
 
 ### Challenge setup
 
