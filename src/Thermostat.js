@@ -7,6 +7,8 @@ class Thermostat {
     this.MIN_TEMP = 10;
     this.MAX_LIMIT_PSM_ON = 25;
     this.MAX_LIMIT_PSM_OFF = 32;
+    this.MEDIUM_ENERGY_USAGE_LIMIT = 18;
+    this.HIGH_ENERGY_USAGE_LIMIT = 25;
     this.PowerSavingMode = true;
   }
 
@@ -53,5 +55,15 @@ class Thermostat {
 
   resetTemp() {
     this.temp = this.DEFAULT_TEMP;
+  }
+
+  energyUsage() {
+    if (this.temp < this.MEDIUM_ENERGY_USAGE_LIMIT) {
+      return 'low-usage';
+    }
+    if (this.temp <= this.HIGH_ENERGY_USAGE_LIMIT) {
+      return 'medium-usage';
+    }
+    return 'high-usage';
   }
 }
