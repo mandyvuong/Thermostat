@@ -12,26 +12,33 @@ document.addEventListener("DOMContentLoaded", () => {
       updateTemperature();
   })
 
+  document.querySelector('#temperature-up').addEventListener('click', () => {
+    thermostat.up();
+    updateTemperature();
+  });
+
   document.querySelector('#temperature-down').addEventListener('click', () => {
-      thermostat.down();
-      updateTemperature();
-  })
+    thermostat.down();
+    updateTemperature();
+  });
 
   document.querySelector('#temperature-reset').addEventListener('click', () => {
-      thermostat.resetTemp();
-      updateTemperature();
-  })
+    thermostat.resetTemperature();
+    updateTemperature();
+  });
 
   document.querySelector('#powersaving-on').addEventListener('click', () => {
-      thermostat.switchPowerSavingModeOn();
-      updateTemperature();
+    thermostat.switchPowerSavingModeOn();
+    document.querySelector('#power-saving-status').innerText = 'on';
+    updateTemperature();
   })
 
   document.querySelector('#powersaving-off').addEventListener('click', () => {
-      thermostat.switchPowerSavingModeOff();
-      updateTemperature();
+    thermostat.switchPowerSavingModeOff();
+    document.querySelector('#power-saving-status').innerText = 'off';
+    updateTemperature();
   })
-})
+});
 
 
   
