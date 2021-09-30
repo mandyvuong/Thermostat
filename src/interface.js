@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const updateTemperature = () => {
-      document.querySelector('#temperature').innerText = thermostat.temp;
-  }
+    const updateTemperature = () => {
+        document.querySelector('#temperature').innerText = thermostat.temp;
+        document.querySelector('#temperature').className = thermostat.energyUsage();
+      }
   
   const thermostat = new Thermostat();
   updateTemperature();
@@ -32,10 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 })
 
-// Comment - can't get colour display working
-// const updateTemperature = () => {
-//     document.querySelector('#temperature').innerText = thermostat.temp;
-//     document.querySelector('#temperature').className = thermostat.energyUsage();
-//   }
+
   
 
